@@ -1,0 +1,81 @@
+body {
+  /*Closes ol.ch*/
+}
+body h1 {
+  font-style: unset;
+  text-decoration: underline;
+  text-align: center;
+}
+body p#jslink a.listanchor {
+  text-decoration: none;
+  color: orangered;
+}
+body p#jslink a.listanchor:visited {
+  color: darkred;
+}
+body p#jslink a.listanchor:hover {
+  color: navy;
+}
+body div.olandul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  padding: 0;
+}
+body div.olandul ol .a {
+  list-style-type: lower-roman;
+}
+body div.olandul ol .b {
+  list-style-type: "";
+}
+body div.olandul ul .c {
+  list-style-type: square;
+}
+body div.olandul ul .d {
+  list-style-type: "$";
+}
+body div.olandul li::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: steelblue;
+}
+body .onlytable {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5px navy;
+  letter-spacing: 1.25px;
+}
+body caption.titlestyle {
+  display: table-caption;
+  caption-side: top;
+  color: black;
+  text-decoration: underline;
+}
+body ol.ch {
+  list-style-type: tamil;
+  /*Closes .nestedlistLi*/
+}
+body ol.ch ul {
+  list-style-type: tamil;
+}
+body ol.ch #oltitleI, body ol.ch #oltitleII {
+  text-decoration: underline;
+}
+body ol.ch .nestedlistLI {
+  text-decoration: none;
+  color: navy;
+  /*Closes a*/
+}
+body ol.ch .nestedlistLI a {
+  text-decoration: none;
+  color: navy;
+  /* closes &:hover*/
+}
+body ol.ch .nestedlistLI a:hover {
+  font-style: italic;
+  color: purple;
+}
+
+/*Closes Body*//*# sourceMappingURL=styling.css.map */

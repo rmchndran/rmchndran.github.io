@@ -1,0 +1,44 @@
+$ucma:maroon;
+$ucdg:#767676;
+$uclg:#D6D6CE;
+$ucwh:#FFFFFF;
+$ucft: Helvetica, sans-serif;
+
+.nav_container {
+    display:flex;
+    border: 2px solid $ucma;
+    background-color: $ucma;
+    font-family: Perpetua;
+    color:black;
+    
+    }
+
+.welcome-text-container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    
+
+    .h-three {font-style: bold;
+    color:black;
+    font-family: Perpetua;
+    text-decoration: underline;
+    text-align: center;
+    font-size: medium;   
+    }
+
+    #para2, #para1, #para4, #para3 {
+        font-family: Perpetua;
+    }
+
+
+}
+
+.h-one {color:black;
+    text-decoration: underline;
+    font-style:unset;
+    font-family:Perpetua;
+    text-align:center;
+    padding-top: 1rem;}

@@ -1,22 +1,18 @@
 h1 {
-    color:maroon;
+    color:darkgrey;
     text-align:center;
+    font-family:Perpetua;
 }
 
 h3 {
-    font-style: italic;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Perpetua;
     font-size: medium;
     text-decoration: underline;
     text-align: center;
 }
 
-/* p.hover-text {
-    cursor:pointer
+#para2, #para1, #para4, #para3 {
+    font-family: Perpetua;
 }
 
-p.hover-text:hover {
-    color:blue;
-    font-weight: bold;
-} */
 

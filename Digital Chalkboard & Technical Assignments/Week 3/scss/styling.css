@@ -1,0 +1,110 @@
+body .nav_container {
+  display: flex;
+  border: 2px solid maroon;
+  background-color: maroon;
+  font-family: Perpetua;
+  color: black;
+}
+body h1 {
+  font-style: unset;
+  font-family: Perpetua;
+  text-decoration: underline;
+  text-align: center;
+}
+body p#jslink {
+  font-family: Perpetua;
+}
+body p#jslink a.listanchor {
+  font-family: Perpetua;
+  text-decoration: none;
+  color: orangered;
+}
+body p#jslink a.listanchor:visited {
+  color: darkred;
+}
+body p#jslink a.listanchor:hover {
+  color: navy;
+  font-style: italic;
+}
+body div.olandul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+body div.olandul .a .dm, body div.olandul .b .dm {
+  list-style-type: lower-roman;
+}
+body div.olandul .a .hg, body div.olandul .b .hg {
+  list-style-type: lower-alpha;
+}
+body div.olandul .c .fc, body div.olandul .d .fc {
+  list-style-type: square;
+}
+body div.olandul .c .ny, body div.olandul .d .ny {
+  list-style-type: "$";
+}
+body div.olandul li::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: steelblue;
+}
+
+.onlytable {
+  font-size: medium;
+  font-family: Perpetua;
+  border: 5px navy;
+  letter-spacing: 1.25px;
+}
+
+caption.titlestyle {
+  display: table-caption;
+  font-family: Perpetua;
+  caption-side: top;
+  color: black;
+  text-decoration: underline;
+}
+
+ol.ch {
+  list-style-type: tamil;
+  /*Closes .nestedlistLi*/
+}
+ol.ch ul {
+  list-style-type: tamil;
+}
+ol.ch #oltitleI, ol.ch #oltitleII {
+  text-decoration: underline;
+}
+ol.ch .nestedlistLI {
+  text-decoration: none;
+  color: navy;
+  /*Closes a*/
+}
+ol.ch .nestedlistLI a {
+  text-decoration: none;
+  color: navy;
+  /* closes &:hover*/
+}
+ol.ch .nestedlistLI a:hover {
+  font-style: italic;
+  color: purple;
+}
+
+/*Closes ol.ch*/
+/*Closes Body*/
+/*Contact Page Styling*/
+.contact-container {
+  display: flex;
+  width: 100%;
+  padding-top: 12%;
+  font-family: Perpetua;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/*About Page Styling*//*# sourceMappingURL=styling.css.map */

@@ -1,0 +1,108 @@
+body {
+  /*Closes div.gridcontainer*/
+}
+body h1 {
+  font-style: unset;
+  text-decoration: underline;
+  text-align: center;
+}
+body p#jslink a.listanchor {
+  text-decoration: none;
+  color: orangered;
+}
+body p#jslink a.listanchor:visited {
+  color: darkred;
+}
+body p#jslink a.listanchor:hover {
+  color: navy;
+}
+body div.olandul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  padding: 0;
+}
+body div.olandul ol .a {
+  list-style-type: lower-roman;
+}
+body div.olandul ol .b {
+  list-style-type: "";
+}
+body div.olandul ul .c {
+  list-style-type: square;
+}
+body div.olandul ul .d {
+  list-style-type: "$";
+}
+body div.olandul li::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: steelblue;
+}
+body .onlytable {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 5px navy;
+  letter-spacing: 1.25px;
+}
+body caption.titlestyle {
+  display: table-caption;
+  caption-side: top;
+  color: black;
+  text-decoration: underline;
+}
+body div.gridcontainer {
+  display: flex;
+  justify-content: center;
+  /*Closes ol.ch*/
+}
+body div.gridcontainer .ch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  list-style-type: none;
+}
+body div.gridcontainer .ch > li {
+  flex-basis: 50%;
+}
+body div.gridcontainer .ch > li:nth-child(odd) {
+  padding-right: 1rem;
+}
+body div.gridcontainer .ch > li h2 {
+  font-style: unset;
+}
+body div.gridcontainer ol.ch {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 5px;
+  width: 100%;
+  align-content: center;
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+  background-color: grey;
+  color: white;
+  /*Closes .nestedlistLi*/
+}
+body div.gridcontainer ol.ch ul {
+  list-style-type: tamil;
+  margin: 0px;
+}
+body div.gridcontainer ol.ch .nestedlistLI {
+  text-decoration: none;
+  color: white;
+  /*Closes a*/
+}
+body div.gridcontainer ol.ch .nestedlistLI a {
+  text-decoration: none;
+  color: white;
+  /* closes &:hover*/
+}
+body div.gridcontainer ol.ch .nestedlistLI a:hover {
+  font-style: italic;
+  color: purple;
+}
+
+/*Closes Body*//*# sourceMappingURL=stylingbs.css.map */

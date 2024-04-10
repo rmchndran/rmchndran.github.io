@@ -1,0 +1,35 @@
+.nav_container {
+  display: flex;
+  border: 2px solid maroon;
+  background-color: maroon;
+  font-family: Perpetua;
+  color: black;
+}
+
+.welcome-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+.welcome-text-container .h-three {
+  font-style: bold;
+  color: black;
+  font-family: Perpetua;
+  text-decoration: underline;
+  text-align: center;
+  font-size: medium;
+}
+.welcome-text-container #para2, .welcome-text-container #para1, .welcome-text-container #para4, .welcome-text-container #para3 {
+  font-family: Perpetua;
+}
+
+.h-one {
+  color: black;
+  text-decoration: underline;
+  font-style: unset;
+  font-family: Perpetua;
+  text-align: center;
+  padding-top: 1rem;
+}/*# sourceMappingURL=homepage.css.map */

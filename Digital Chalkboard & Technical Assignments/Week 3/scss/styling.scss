@@ -1,0 +1,133 @@
+$ucma:maroon;
+$ucdg:#767676;
+$uclg:#D6D6CE;
+$ucwh:#FFFFFF;
+$ucft: Helvetica, sans-serif;
+
+@mixin letterbold {
+    font-size:20px;
+    font-weight:bold;
+    color:steelblue;
+}
+@mixin boxy {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    padding:1rem;
+    margin:0;
+    padding:0;
+    column-gap: 40px;
+}
+
+@mixin listcontainer {
+    display:flex;
+    flex-flow:row wrap;
+}
+
+
+
+body{
+
+    
+
+.nav_container {
+    display:flex;
+    border: 2px solid $ucma;
+    background-color: $ucma;
+    font-family: Perpetua;
+    color:black;
+    
+    }
+
+    h1 {font-style:unset;
+        font-family: Perpetua;
+    text-decoration: underline;
+    text-align: center;}
+    
+    p#jslink { font-family: Perpetua;
+            a.listanchor {
+                font-family: Perpetua;
+                text-decoration: none; 
+                color: orangered;
+            
+            
+            &:visited {color:darkred;} 
+            &:hover {color:navy;
+            font-style: italic}
+            }
+    }
+
+    div.olandul {
+        @include boxy();
+
+        .a, .b {
+        .dm {list-style-type: lower-roman;} 
+        .hg {list-style-type: lower-alpha;} 
+        }
+
+        .c, .d {
+        .fc {list-style-type: square;} 
+        .ny {list-style-type: "$";} 
+        }
+
+        li::first-letter{@include letterbold()}
+    }
+
+}
+
+.onlytable {
+    font-size: medium;
+    font-family: Perpetua;
+    border: 5px navy;
+    letter-spacing: 1.25px
+}
+
+caption.titlestyle {
+    display: table-caption;
+    font-family: Perpetua;
+    caption-side:top;
+    color:black;
+    text-decoration: underline; 
+}
+
+ol.ch {
+    list-style-type: tamil;
+
+    ul {
+        list-style-type: tamil;}
+
+    #oltitleI, #oltitleII 
+    {
+        text-decoration: underline;
+    }
+
+    .nestedlistLI
+    {
+        text-decoration: none;
+        color:navy;
+
+    a { 
+        text-decoration: none;
+            color:navy;
+        
+            &:hover {font-style:italic;color:purple;
+            }   /* closes &:hover*/
+        }   /*Closes a*/
+    }   /*Closes .nestedlistLi*/
+}      /*Closes ol.ch*/
+   /*Closes Body*/
+
+   /*Contact Page Styling*/
+
+.contact-container {
+    display:flex;
+    width: 100%;
+    padding-top: 12%;
+    font-family:Perpetua;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+    /*About Page Styling*/
+
