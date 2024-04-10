@@ -1,0 +1,134 @@
+$display-font-sizes: 
+    (1:2rem, 2:0.2rem);
+
+
+@mixin letterbold {
+    font-size:20px;
+    font-weight:bold;
+    color:steelblue;
+}
+@mixin boxy {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    padding:1rem;
+    margin:0;
+    padding:0;
+}
+
+@mixin listgrid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items: center;
+}
+
+@mixin gridadjacent {
+    display:grid;
+    grid-template-columns: 250px 250px;
+    gap:5px;
+    width:100%;
+    align-content: center;
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+
+}
+
+@mixin centre {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+body {
+
+    h1 {font-style:unset;
+    text-decoration: underline;
+    text-align: center;}
+    
+    p#jslink {
+            a.listanchor {
+                text-decoration: none; 
+                color: orangered;
+            
+            
+            &:visited {color:darkred;} 
+            &:hover {color:navy;}
+            }
+    }
+
+    div.olandul {
+        @include boxy();
+
+        ol {
+        .a {list-style-type: lower-roman;} 
+        .b {list-style-type: "";} 
+        }
+
+        ul {
+        .c {list-style-type: square;} 
+        .d {list-style-type: "$";} 
+        }
+
+        li::first-letter{@include letterbold()}
+    }
+
+
+
+.onlytable {
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px navy;
+    letter-spacing: 1.25px
+}
+
+caption.titlestyle {
+    display: table-caption;
+    caption-side:top;
+    color:black;
+    text-decoration: underline; 
+}
+
+div.gridcontainer {@include centre();
+
+.ch {@include listgrid();
+    list-style-type: none;
+
+    > li {
+        flex-basis:50%;
+        &:nth-child(odd) {
+            padding-right:1rem;
+        }
+        h2 {font-style: unset;}
+    }
+}
+
+
+
+ol.ch{@include gridadjacent();
+    background-color:grey;
+    color:white;
+    
+    ul {
+        list-style-type: tamil;
+        margin:0px;
+    }
+
+    .nestedlistLI 
+    {
+        text-decoration: none;
+        color:white;
+
+    a { 
+        text-decoration: none;
+            color:white;
+        
+            &:hover {font-style:italic;color:purple;
+            
+            }   /* closes &:hover*/
+        }   /*Closes a*/
+    }   /*Closes .nestedlistLi*/
+}       /*Closes ol.ch*/
+}     /*Closes div.gridcontainer*/
+}   /*Closes Body*/
