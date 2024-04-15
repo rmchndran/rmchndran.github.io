@@ -1,0 +1,30 @@
+$custom_maroon:#850000;
+$carousel-control-color: $custom_maroon;
+$carousel-control-prev-icon-bg: $custom_maroon;
+
+.carousel {
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.carousel-inner {
+    width: 640px;
+    height: 320px;
+    border: 2px solid black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height:320px;
+    background: none;
+    border: none;
+    text-decoration: none;
+
+    span { 
+        color:black important!; 
+    }
+}
+
+
+

@@ -1,9 +1,5 @@
-.nav_container {
-  display: flex;
-  border: 2px solid maroon;
-  background-color: maroon;
-  font-family: Perpetua;
-  color: black;
+body {
+  background-color: #D5D5D5;
 }
 
 .welcome-text-container {
@@ -32,4 +28,44 @@
   font-family: Perpetua;
   text-align: center;
   padding-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.btn-custom1-changeclass {
+  background-color: #D3D3D3;
+  color: #850000;
+  font-family: Perpetua;
+  border: 1px solid #850000;
+  border-radius: 0%;
+}
+.btn-custom1-changeclass:hover {
+  color: #850000;
+  font-style: italic;
+}
+.btn-custom1-changeclass::after {
+  text-decoration: line-through;
+}
+
+.btn-custom2-hello {
+  background-color: #D3D3D3;
+  color: #850000;
+  font-family: Perpetua;
+  border: 1px solid #850000;
+  border-radius: 0%;
+}
+.btn-custom2-hello:hover {
+  color: #850000;
+  font-style: italic;
+}
+
+.containercols {
+  padding: 20px;
+}
+
+.col-sm {
+  background-color: #D9D9D9;
+  padding: 20px;
+  border: 1px solid #D70040;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=homepage.css.map */

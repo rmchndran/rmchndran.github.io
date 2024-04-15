@@ -13,20 +13,21 @@
         <!-- Local CSS -->
         <link rel="icon" href="images/hand_fav_icon.ico" type="image/x-icon">
         <link rel="stylesheet" href="Digital Chalkboard & Technical Assignments/Week 2/css/homepage.css">
+        <link rel="stylesheet" href="Digital Chalkboard & Technical Assignments/Week 2/css/navbar.css">
+        <link rel="stylesheet" href="Digital Chalkboard & Technical Assignments/Week 4/carousel.css">
     </head>
 
     <body>
             <!-- Navigation Bar -->
             <div class="nav_container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html">Data Publication</a>
+                    <a class="navbar-brand" href="index.html"><strong>Data Publication</strong></a>
                     <!-- <span class="navbar-border"></span> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html">Home</a>
                                 </li>
@@ -39,19 +40,76 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="Digital Chalkboard & Technical Assignments/Week 3/html/About.html">About</a>
                                 </li>
-                            </ul>            
+                                       
+                        
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Assignments
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="Digital Chalkboard & Technical Assignments/Week 2/html/retro.html">Week 2</a></li>
+                                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                                    <li><a class="dropdown-item" href="Digital Chalkboard & Technical Assignments/Week 3/html/Digital Chalkboard Week3.html">Week 3 </a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div> 
-        
+
 
         <h1 class="h-one">DIGS 20005 Webpage</h1>
             <div class="welcome-text-container">
-                <h3 class="h-three">'GitHub Site'</h3>
-                <p id="para1"> At first, there was one paragraph.</p>
-                <p id="para2" class="grouped-p"> And, then there were two.</p>
-                <p id="para3" class ="grouped-p"> The second thought the first was dull and asked me to join him here, so here I am.</p>
-                <p id="para4">  <a class="hover-text" href="retro.html"> Retro Page Here </a></p>
+                <!-- <h3 class="h-three">'GitHub Site'</h3> -->
+                <!-- <p id="para1"> At first, there was one paragraph.</p> -->
+                <!-- <p id="para2" class="grouped-p"> And, then there were two.</p> -->
+                <!-- <p id="para3" class ="grouped-p"> The second thought the first was dull and asked me to join him here, so here I am.</p> -->
+                <!-- <p id="para4">  <a class="hover-text" href="Digital Chalkboard & Technical Assignments/Week 2/html/retro.html"> Retro Page Here </a></p> -->
             </div>
+
+            <div class="container carousel slide carousel-fade" id="indexcarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Digital Chalkboard & Technical Assignments/Week 4/images/berlin1.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Digital Chalkboard & Technical Assignments/Week 4/images/berlin2.jpeg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Digital Chalkboard & Technical Assignments/Week 4/images/berlin3.jpeg" alt="" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#indexcarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#indexcarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+                </button>
+            </div>
+            
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit purus, pharetra nec diam eget, finibus eleifend eros. Fusce nisi tortor, rutrum at tellus eget, ucibus diam posuere et. Integer ac magna orci. Integer eget magna viverra, pulvinar ligula non, bibendum ligula. Nam aliquam luctus felis, vel pretium nunc accumsan quis. Quisque scelerisque, lacus in rutrum lobortis, ligula dolor faucibus quam, vitae ullamcorper mi velit at lectus. Aliquam pulvinar est ut nisi mattis tincidunt.</div>
+                    <div class="col-sm">Cras fermentum libero sed nunc porttitor dapibus. In ac libero aliquet, elementum nibh id, mattis mauris. Sed maximus sed purus eu hendrerit. Nam pretium nequegula placerat vitae. Mauris posuere finibus sapien eu pellentesque. Sed vestibulum orci vitae eros convallis pharetra. Quisque odio velit, finibus a euismod at, feugiat a libero. Mauris vel erat viverra, scelerisque arcu eu, malesuada nisl. Etiam hendrerit condimentum sapien sed posuere. Morbi tempor ac sapien et sagittis.</div>
+                    <div class="col-sm">In a gravida risus, rhoncus rutrum justo. Nullam vitae enim nec dolor sagittis condimentum in ac est. Curabitur volutpat arcu ut convallis iaculis. Etiam faucibus lorem id mollis ultricies. Proin malesuada erat leo, tincidunt dapibus turpis sodales in. Mauris dignissim ex non urna dictum consectetur. Morbi dictum nunc erat.</div>
+                    <div class="col-sm">Quisque pulvinar fermentum risus et volutpat. Integer accumsan ornare nisi, eu fermentum lorem volutpat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tellus in tellus viverra consectetur. Donec faucibus posuere nibh quis sagittis. Praesent vitae sapien felis. Mauris at fringilla turpis, nec dictum ante. Sed feugiat aliquam arcu, sed luctus velit varius in.</div>
+                </div>    
+            </div>       
+                
+                <div class="containercols mt-4">
+                    <div class="row"> 
+                    <div class="col text-center">
+                        <button id="Portal" class="btn btn-custom1-changeclass">Trust Me</button>
+                    </div>
+                    <div class="col text-center">
+                        <button id="welcome" class="btn btn-custom2-hello" onclick=welcome_user()>Hello!</button>
+                    </div>
+                </div>
+            </div>
+       
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>       
+    <script src="Digital Chalkboard & Technical Assignments/Week 4/buttons.js"></script>
     </body>
 </html>

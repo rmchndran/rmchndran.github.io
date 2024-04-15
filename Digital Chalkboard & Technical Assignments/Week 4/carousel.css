@@ -1,0 +1,23 @@
+.carousel {
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.carousel-inner {
+  width: 640px;
+  height: 320px;
+  border: 2px solid black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 320px;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+.carousel-control-prev span, .carousel-control-next span {
+  fill: black;
+}/*# sourceMappingURL=carousel.css.map */
