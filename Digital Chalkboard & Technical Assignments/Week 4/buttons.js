@@ -3,10 +3,10 @@ function welcome_user() {
     const clicktime = now.getHours();
     let appr_word;
 
-    if (clicktime > 17 && clicktime >= 24) {
+    if (clicktime >= 18 && clicktime <= 23) {
         appr_word = "Good Evening";
 
-    } else if (clicktime > 12 && clicktime < 17) {
+    } else if (clicktime >= 12 && clicktime < 18) {
         appr_word = "Good Afternoon"
     } else {
         appr_word = "Good Morning"
