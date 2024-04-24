@@ -78,4 +78,63 @@ body ol.ch .nestedlistLI a:hover {
   color: purple;
 }
 
+body {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+body::before{
+  content:'';
+  position:absolute;
+  height:2px;
+  width:60%;
+  background:lightgray;
+  left:-60%;
+  animation: move 8s linear infinite;
+}
+
+body::after{
+  content:'';
+  position:absolute;
+  height:2px;
+  width:100%;
+  background:lightgray;
+  left:-100%;
+  animation: move 9s linear infinite;
+}
+
+
+body > .line {
+  content:'';
+  position:absolute;
+  height:2px;
+  width:75%;
+  background:lightgray;
+  left:-75%;
+  animation: move 10s linear infinite;
+}
+
+body::before {
+  top:210%;
+}
+
+body::after {
+  top:320%;
+}
+
+.line {
+  top:500%;
+}
+
+@keyframes move {
+  0% {
+      left:-100%
+  }
+
+  100% {
+      left:100%
+  }
+}
+
 /*Closes Body*//*# sourceMappingURL=styling.css.map */

@@ -28,16 +28,16 @@ $ucft: Helvetica, sans-serif;
 
 body{
 
-    
+background-color: #D5D5D5;    
 
-.nav_container {
-    display:flex;
-    border: 2px solid $ucma;
-    background-color: $ucma;
-    font-family: Perpetua;
-    color:black;
+// .nav_container {
+//     display:flex;
+//     border: 2px solid $ucma;
+//     background-color: $ucma;
+//     font-family: Perpetua;
+//     color:black;
     
-    }
+//     }
 
     h1 {font-style:unset;
         font-family: Perpetua;
@@ -122,7 +122,7 @@ ol.ch {
 .contact-container {
     display:flex;
     width: 100%;
-    padding-top: 12%;
+    padding-top: 10%;
     font-family:Perpetua;
     flex-direction: column;
     text-align: center;

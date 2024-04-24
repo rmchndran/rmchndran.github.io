@@ -1,9 +1,5 @@
-body .nav_container {
-  display: flex;
-  border: 2px solid maroon;
-  background-color: maroon;
-  font-family: Perpetua;
-  color: black;
+body {
+  background-color: #D5D5D5;
 }
 body h1 {
   font-style: unset;
@@ -100,11 +96,70 @@ ol.ch .nestedlistLI a:hover {
 .contact-container {
   display: flex;
   width: 100%;
-  padding-top: 12%;
+  padding-top: 10%;
   font-family: Perpetua;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+body::before{
+  content:'';
+  position:absolute;
+  height:2px;
+  width:60%;
+  background:lightgray;
+  left:-60%;
+  animation: move 8s linear infinite;
+}
+
+body::after{
+  content:'';
+  position:absolute;
+  height:2px;
+  width:100%;
+  background:lightgray;
+  left:-100%;
+  animation: move 9s linear infinite;
+}
+
+
+body > .line {
+  content:'';
+  position:absolute;
+  height:2px;
+  width:75%;
+  background:lightgray;
+  left:-75%;
+  animation: move 10s linear infinite;
+}
+
+body::before {
+  top:210%;
+}
+
+body::after {
+  top:320%;
+}
+
+.line {
+  top:500%;
+}
+
+@keyframes move {
+  0% {
+      left:-100%
+  }
+
+  100% {
+      left:100%
+  }
 }
 
 /*About Page Styling*//*# sourceMappingURL=styling.css.map */
