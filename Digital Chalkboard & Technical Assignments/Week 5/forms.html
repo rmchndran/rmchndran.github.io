@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trivia</title>
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="icon" href="images/hand_fav_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Digital Chalkboard & Technical Assignments/Week 2/css/navbar.css">
+    <link rel="stylesheet" href="forms.css" class="stylesheet">
+   
+    
+</head>
+<body>
+                <!-- Navigation Bar -->
+                <div class="nav_container">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="../../index.html"><strong>Data Publication</strong></a>
+                        <!-- <span class="navbar-border"></span> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Week 3/html/Contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Week 3/html/About.html">About</a>
+                                    </li>
+                                           
+                            
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Assignments
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../Week 2/html/retro.html">Week 2</a></li>
+                                        <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                                        <li><a class="dropdown-item" href="../Week 3/html/Digital Chalkboard Week3.html">Week 3 </a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div> 
+
+            <div class="container-forms">
+                <!-- <div class="row"> -->
+                    <h4 class="qheaders"><ins>Enter a Five Digit Number Below:</ins></h4>
+                    <div class="col-sm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" id="numbersub" type="button" onclick=verify()>Press</button>
+                            </div>
+                            <input class="submitarea" type="text" id="numberverify" placeholder=" Enter a Five Digit Number " aria-label="Enter the Numbers" aria-describedby="basic-addon1">
+                        </div>
+                        <div id="result"></div>
+                    </div>
+                    <h4 class="qheaders"><ins>Name the only US President whose lineage cannot be traced back to King John:</ins></h4>
+                    <div class="col-sm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" id="answersub" type="button" onclick=verify_question()>Press</button>
+                            </div>
+                            <input class="submitarea" type="text" id="answerverify" placeholder=" Submit Your Answer " aria-label="Guess" aria-describedby="basic-addon1">
+                        </div>
+                        <div id="triviaresult"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="Digital Chalkboard & Technical Assignments/Week 4/buttons.js"></script> 
+     <script src="forms.js"></script>
+</body>
+</html>

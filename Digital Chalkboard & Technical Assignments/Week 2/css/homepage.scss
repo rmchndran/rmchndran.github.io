@@ -32,7 +32,7 @@ body {
 
 }
 
-.h-one {color:black;
+.h-one {color:#000000;
     text-decoration: underline;
     font-style:unset;
     font-family:Perpetua;
@@ -75,6 +75,24 @@ body {
     margin-bottom: 10px;
 }
 
+.container-player {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    h6 {
+        font-family: Perpetua;
+        
+    }
+
+    #play-btn {
+        font-family: Pereptua;
+        border-radius: 0%;
+        border: 1px solid #850000;
+    }
+}
 
 
 

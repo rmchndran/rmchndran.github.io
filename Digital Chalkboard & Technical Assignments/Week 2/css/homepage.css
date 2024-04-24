@@ -22,7 +22,7 @@ body {
 }
 
 .h-one {
-  color: black;
+  color: #000000;
   text-decoration: underline;
   font-style: unset;
   font-family: Perpetua;
@@ -68,4 +68,20 @@ body {
   border: 1px solid #D70040;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.container-player {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.container-player h6 {
+  font-family: Perpetua;
+}
+.container-player #play-btn {
+  font-family: Pereptua;
+  border-radius: 0%;
+  border: 1px solid #850000;
 }/*# sourceMappingURL=homepage.css.map */
