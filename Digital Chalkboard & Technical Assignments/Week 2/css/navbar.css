@@ -13,6 +13,7 @@ nav.navbar.navbar-dark .navbar-brand, nav.navbar.navbar-dark .nav-link {
 
 nav.navbar.navbar-dark .navbar-brand {
   text-decoration: none;
+  font-weight: bold;
   border: 1px solid #850000;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -28,6 +29,8 @@ nav.navbar.navbar-dark .navbar-brand {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
   border: 1px solid #850000;
   border-radius: 0%;
+  max-height: 150px;
+  overflow-y: scroll;
 }
 .dropdown-menu .dropdown-item {
   font-family: Perpetua;
