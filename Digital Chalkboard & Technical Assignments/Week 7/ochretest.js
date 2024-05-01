@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const fetch_id = document.body.getAttribute('data-uuid');
     const ochre_url = 'https://ochre.lib.uchicago.edu/ochre?uuid=';
-    const display = document.getElementById('called-container');
+    var display = document.getElementById('called-container');
     let output = '';
 
 

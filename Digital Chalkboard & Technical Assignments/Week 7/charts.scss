@@ -1,0 +1,17 @@
+
+@mixin chartSizing {
+    display: flex;
+    height: 75%;
+    width: 92.5%;
+    margin: 60px;
+    border: 1px solid #850000;
+    padding: 30px;
+}
+
+.chart-container{
+    @include chartSizing();
+}
+
+.chart-container-2{
+    @include chartSizing();
+}
