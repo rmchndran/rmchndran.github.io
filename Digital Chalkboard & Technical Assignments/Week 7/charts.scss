@@ -15,3 +15,9 @@
 .chart-container-2{
     @include chartSizing();
 }
+
+#temp-btn {
+    color: #850000;
+    border: 2px solid #850000;
+    text-decoration: underline #850000;
+}

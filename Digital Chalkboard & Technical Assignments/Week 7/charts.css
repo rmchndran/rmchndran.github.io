@@ -14,4 +14,11 @@
   margin: 60px;
   border: 1px solid #850000;
   padding: 30px;
+}
+
+#temp-btn {
+  color: #850000;
+  border: 2px solid #850000;
+  -webkit-text-decoration: underline #850000;
+          text-decoration: underline #850000;
 }/*# sourceMappingURL=charts.css.map */

@@ -1,0 +1,23 @@
+@mixin functionContainerSizing {
+    width: fit-content;
+    margin: 20px;
+    border: 1px solid #850000;
+    padding: 10px;
+    font-family: Perpetua;
+    justify-content: space-around;
+}
+
+body {
+    background: #d5d5d5;
+}
+
+.container-js-functions {
+    @include functionContainerSizing();
+
+    .btn-custom {
+        border-radius: 0%;
+        border: 1px solid #850000;
+    }
+
+
+}

@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const value = p.querySelector('value');
 
             if(string && value) {
-                output += `${string.textContent} | ${value.textContent} | <br><br>`
+                output += `<strong>${string.textContent}</strong> | ${value.textContent} | <br><br>`
                 if(string.textContent == 'Associated text') {
+                    const titleLocation = document.getElementById('api-fetch-title');
+                    titleLocation.innerHTML = `<u><strong>~ ${value.textContent} ~</strong></u><br><br>`;
                     add_uuid = value.getAttribute('uuid');
                 }
             }
