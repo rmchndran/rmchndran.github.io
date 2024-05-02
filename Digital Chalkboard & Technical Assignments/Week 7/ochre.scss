@@ -5,15 +5,28 @@ body {
     font-size: large;
 }
 
+h2 {
+    padding-top: 10px;
+}
+
 #api-fetch-title {
     text-align: center;
 }
 
-.ochre-container {
-    align-content: center;
-    margin-left: 20px;
-    .called-container {
-        text-align: left;
-    }
+#called-container {
+    display: flex;
+    justify-content: center;
 }
+
+.table {
+    width: fit-content;
+    align-self: center;
+    tr, td{
+        border:1px solid #850000;
+        white-space: nowrap;
+        overflow: hidden;
+} 
+
+}
+
 

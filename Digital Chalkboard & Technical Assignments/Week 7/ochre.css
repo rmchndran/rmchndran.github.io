@@ -4,14 +4,26 @@ body {
   font-size: large;
 }
 
+h2 {
+  padding-top: 10px;
+}
+
 #api-fetch-title {
   text-align: center;
 }
 
-.ochre-container {
-  align-content: center;
-  margin-left: 20px;
+#called-container {
+  display: flex;
+  justify-content: center;
 }
-.ochre-container .called-container {
-  text-align: left;
+
+.table {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+.table tr, .table td {
+  border: 1px solid #850000;
+  white-space: nowrap;
+  overflow: hidden;
 }/*# sourceMappingURL=ochre.css.map */
