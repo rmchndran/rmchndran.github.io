@@ -5,6 +5,12 @@
     padding: 10px;
     font-family: Perpetua;
     justify-content: space-around;
+    
+}
+
+@mixin btn-cust {
+    border-radius: 0%;
+        border: 1px solid #850000;
 }
 
 body {
@@ -15,9 +21,16 @@ body {
     @include functionContainerSizing();
 
     .btn-custom {
-        border-radius: 0%;
-        border: 1px solid #850000;
+        @include btn-cust();
     }
+
+    .display {
+        padding:10px;
+    }
+
+    
 
 
 }
+
+

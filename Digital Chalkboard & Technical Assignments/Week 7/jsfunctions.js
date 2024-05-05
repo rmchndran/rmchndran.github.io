@@ -28,5 +28,44 @@ function lastItem(fruitArray, outputId) {
     pushToHTML(outputId, sorted, output);
 }
 
+//promptCategories()
+
+function getCategories() {
+    let categoryCount = parseInt(prompt(`Enter Between Two & Four Categories -- Choose Wisely!`));
+    while(categoryCount < 2 || categoryCount > 4 || isNaN(categoryCount)) {
+        categoryCount = parseInt(prompt(`Invalid Entry`));
+    }
+    combineCats(categoryCount);
+
+
+}
+
+function combineCats(categories, catArray=[]) {
+    if(catArray.length < categories) {
+        let catEntry = prompt(`Enter Category (${catArray.length + 1} of ${categories})`);
+        catArray.push(catEntry);
+        combineCats(categories, catArray)
+    } else {
+        populateCategories(catArray)
+    }
+
+function populateCategories(catArray, catEntries=[], counter=0) {
+    if(counter < catArray.length) {
+        let itemEntry = prompt(`Enter an item for the following category: ${catArray[counter]}`);
+        catEntries.push(`${itemEntry}`);
+        populateCategories(catArray, catEntries, counter + 1);
+    } else {
+        outputTo = document.getElementById("display-sort-items");
+        outputTo.innerHTML = `Your Categories were ${catArray.join(', ')} & Your Entries were ${catEntries.join(', ')}<br>
+        Also, I've sorted them for you: ${[...catEntries].sort().join(", ")}`;
+    }
+}
+
+}
+
+document.getElementById('sortCategories').addEventListener('click',getCategories);
+
+
+
 
 

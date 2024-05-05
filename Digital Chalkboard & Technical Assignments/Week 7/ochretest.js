@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(text_output => {
             const parser = new DOMParser();
             return parser.parseFromString(text_output,'text/xml'); //Returns XML document.
-
         });
     }
 
@@ -60,25 +59,76 @@ document.addEventListener('DOMContentLoaded', function() {
         return add_uuid; //Ensures nested uuid is accessible.
     }
 
-    getXml(fetch_id)
-        .then(xml)
+    getXml(fetch_id) //Here the fetch is actually intiated.
+        .then(xml) //Predefined functions called appropriately.
         .then(add_uuid => {
-            if(add_uuid) {
+            if(add_uuid) { //Passes nested uuid back through if needed.
                 return getXml(add_uuid)
                     .then(xml)
             }
 
         })
         .catch(error => {
-            console.error("Another Problem:", error);
-            display.innerHTML = 'Error!!' + error.message;
+            console.error("Another Problem:", error); //Catches any error in the fetch process.
+            display.innerHTML = 'Error!!' + error.message; //Displays the error in the HTML.
     });
 
 });
 
 
-//Here the fetch is actually intiated.
-//Predefined functions called appropriately.
-//Passes nested uuid back through if needed.
-//Catches any error in the fetch process.
-//Displays the error in the HTML.
+    // function processParsedXML(xmlDocument) {
+    //     const allElements = xmlDocument.documentElement;
+    //     sortNodes(allElements);
+    // }
+
+    // function sortNodes(elNodes) {
+    //     let uuid_list = '';
+    //     let rawtext = '';
+
+    //     switch(elNodes.nodeType) {
+    //         case 1:
+    //             let value, string = null;
+    //             let nodeArray = Array.from(elNodes.children);
+    //             for(const node of nodeArray) {
+    //                 if((node.querySelector('value'))){
+    //                     value = node.textContent;
+    //                 }
+    //                 if((node.querySelector('string'))){
+    //                     string = node.textContent;
+    //                 } 
+    //                 if(value && string) {
+    //                     var row = document.createElement('tr');
+    //                     var strCell = document.createElement('td');
+    //                     var valCell = document.createElement('td');
+    //                     strCell.innerHTML = `<strong>${string}</strong>`;
+    //                     valCell.innerHTML = `<strong>${value}</strong>`;
+    //                     row.appendChild(strCell);
+    //                     row.appendChild(valCell);
+    //                     tbody.appendChild(row);
+    //                 }
+    //             } break;
+    //         case 2: 
+    //             if (elNodes.hasAttribute('uuid')) {
+    //                 uuid_list += ` ${elNodes.getAttribute('uuid')} |`;
+    //             }  break; 
+    //         case 3:
+    //             rawtext += `Text from ${elNodes.nodeName} : ${elNodes.textContent.trim()}`;
+    //             break;
+            
+    //         case 4:
+    //             default:
+    //                 break;
+    //     }
+
+    // }
+
+    //     getXml(fetch_id)
+    //         .then(processParsedXML)
+
+    // });
+
+
+
+
+
+
