@@ -33,7 +33,7 @@ function lastItem(fruitArray, outputId) {
 function getCategories() {
     let categoryCount = parseInt(prompt(`Enter Between Two & Four Categories -- Choose Wisely!`));
     while(categoryCount < 2 || categoryCount > 4 || isNaN(categoryCount)) {
-        categoryCount = parseInt(prompt(`Invalid Entry`));
+        categoryCount = parseInt(prompt(`Invalid Entry! Enter Between Two & Four Categories!`));
     }
     combineCats(categoryCount);
 
