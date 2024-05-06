@@ -36,7 +36,6 @@ for (let items of navitems) {
     items.addEventListener("click", show_visited)
 }
 
-document.getElementsByClassName("nav-link").addEventListener("click",show_visited);
 
 
 function after_click(event) {
@@ -50,6 +49,31 @@ for (let items of btns) {
     items.addEventListener("click", after_click);
 
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtns = document.querySelectorAll(".dropdown-menu .dropdown-toggle");
+    
+    toggleBtns.forEach(function(click){
+        click.addEventListener('click', function(menuItem){
+            menuItem.stopPropagation();
+
+            var dropdownParentElement = click.parentElement;
+            var navDropdown = dropdownParentElement.querySelector('.dropdown-menu');
+
+            if(navDropdown.classList.contains('show')) {
+                navDropdown.classList.remove('show')
+            } else {
+                var toClose = document.querySelectorAll('dropdown-submenu dropdown-menu-show');
+                toClose.forEach(function(menu){
+                    menu.classList.remove('show');
+                });
+
+                navDropdown.classList.add('show');
+            }
+        });
+    });
+});
+
 
 
 

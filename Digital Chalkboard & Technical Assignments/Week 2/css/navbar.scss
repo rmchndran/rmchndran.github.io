@@ -71,4 +71,16 @@ nav.navbar.navbar-dark {
         background-color:#850000;
     }
 
+    .dropdown-submenu {
+        position:relative;
+        
+        .dropdown-menu {
+            text-align: center;
+            width: 122px;
+
+            
+        }
+        
+    }
+
 }

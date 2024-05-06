@@ -60,4 +60,11 @@ nav.navbar.navbar-dark .navbar-brand {
 }
 .dropdown-menu .dropdown-divider {
   background-color: #850000;
+}
+.dropdown-menu .dropdown-submenu {
+  position: relative;
+}
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+  text-align: center;
+  width: 122px;
 }/*# sourceMappingURL=navbar.css.map */
