@@ -2,17 +2,18 @@ $custom_maroon:#850000;
 $carousel-control-color: $custom_maroon;
 $carousel-control-prev-icon-bg: $custom_maroon;
 
-.carousel {
+.container.carousel {
     width: fit-content;
+    height:323px;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    border: 1.5px solid #850000;
 }
 
 .carousel-inner {
     width: 640px;
     height: 320px;
-    border: 2px solid black;
 }
 
 .carousel-control-prev, .carousel-control-next {

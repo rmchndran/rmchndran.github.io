@@ -1,15 +1,16 @@
-.carousel {
+.container.carousel {
   width: -moz-fit-content;
   width: fit-content;
+  height: 323px;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+  border: 1.5px solid #850000;
 }
 
 .carousel-inner {
   width: 640px;
   height: 320px;
-  border: 2px solid black;
 }
 
 .carousel-control-prev, .carousel-control-next {

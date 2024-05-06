@@ -1,9 +1,26 @@
 .nav_container {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   border: 1.5px solid #850000;
   background-color: #D7D7D7;
   font-family: Perpetua;
   color: black;
+  padding: 5px;
+}
+.nav_container .nav, .nav_container .time-container {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  margin-left: 840px;
+  color: #850000;
+  font-weight: bold;
+}
+.nav_container .nav #time-output, .nav_container .time-container #time-output {
+  border: 1px solid #850000;
+  padding: 2.5px;
 }
 
 nav.navbar.navbar-dark .navbar-brand, nav.navbar.navbar-dark .nav-link {

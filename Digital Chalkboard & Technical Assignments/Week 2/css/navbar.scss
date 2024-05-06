@@ -6,10 +6,29 @@ $ucft: Helvetica, sans-serif;
 
 .nav_container {
     display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     border: 1.5px solid #850000;
     background-color: #D7D7D7;
     font-family: Perpetua;
     color:black;
+    padding:5px;
+
+
+    .nav, .time-container {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        margin-left: 840px;
+        color:#850000;
+        font-weight: bold;
+
+        #time-output {
+            border: 1px solid #850000;
+            padding:2.5px
+        }
+    }
     }
 
 nav.navbar.navbar-dark {
@@ -29,8 +48,6 @@ nav.navbar.navbar-dark {
         padding-left: 0.5rem;
     }
 }
-
-
 
 .dropdown-menu {
     position:absolute;
@@ -55,6 +72,3 @@ nav.navbar.navbar-dark {
     }
 
 }
-
-
-

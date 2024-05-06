@@ -36,7 +36,7 @@ for (let items of navitems) {
     items.addEventListener("click", show_visited)
 }
 
-document.getElementByClass("nav-link").addEventListener("click",show_visited);
+document.getElementsByClassName("nav-link").addEventListener("click",show_visited);
 
 
 function after_click(event) {
