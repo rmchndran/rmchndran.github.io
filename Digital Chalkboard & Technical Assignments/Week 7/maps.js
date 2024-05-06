@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('mapOne').setView([52.44157, 13.21203], 14);
     console.log(map.getZoom())
 
-    L.tileLayer(L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map))
+    }).addTo(map)
 
     var customIcon = L.icon({
         iconUrl:'bearicon.png',
@@ -16,15 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         popupAnchor:[0,-32],
 
     })
-    
-    var pinpointLake = L.marker([52.44053, 13.20963],{icon:customIcon}).addTo(map);
-    pinpointLake.bindPopup("Superb spot for a swim and a beer!");
-
-    var pinpointBeer = L.marker([52.43955, 13.21470],{icon:customIcon}).addTo(map);
-    pinpointBeer.bindPopup("One can buy a beer here after the walk from Mexikoplatz.");
-
-    var pinpointBus = L.marker([52.43745, 13.23202],{icon:customIcon}).addTo(map);
-    pinpointBus.bindPopup("A convenient stop on the 118 bus for propsective swimmmers.")
 
     var swimBounds = 
     [[52.4401,13.21088],
@@ -34,9 +25,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var interestZone = L.polygon(swimBounds,{color: "#850000", weight:1}).addTo(map);
     
-    if(map.getZoom() > 14) {
-        interestZone.addTo(map);
+    function keyAppear() {
+        var currentZoom = map.getZoom();
+        console.log(currentZoom)
+        if(currentZoom < 13) {
+            interestZone.setStyle({opacity:0.5});
+        } else {
+            interestZone.setStyle({opacity:0});
+        }
     }
+
+    map.on("zoomend", keyAppear);
+    
+    var pinpointLake = L.marker([52.44053, 13.20963],{icon:customIcon}).addTo(map);
+    pinpointLake.bindPopup("Superb spot for a swim and a beer!");
+
+    var pinpointBeer = L.marker([52.43955, 13.21470],{icon:customIcon}).addTo(map);
+    pinpointBeer.bindPopup("One can buy a beer here after the walk from Mexikoplatz.");
+
+    var pinpointBus = L.marker([52.43745, 13.23202],{icon:customIcon}).addTo(map);
+    pinpointBus.bindPopup("A convenient stop on the 118 bus for propsective swimmmers.");
+    
 
     var latLngs = [
         [52.43955, 13.21470],
@@ -61,5 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var centreBerlin = L.marker([52.51620, 13.37699],{icon:customIcon}).addTo(map);
         locationName.innerHTML = "Brandenberg Tor";
     })
+
 })
+
 
