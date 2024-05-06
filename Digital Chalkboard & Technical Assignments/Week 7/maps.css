@@ -1,0 +1,32 @@
+body {
+  background-color: #D5D5D5;
+}
+body .h-two {
+  color: #000000;
+  text-decoration: underline;
+  font-style: unset;
+  font-family: Perpetua;
+  text-align: center;
+  padding-top: 16px;
+}
+body .map-container {
+  display: flex;
+  margin-top: 70px;
+  margin-right: 40px;
+  margin-left: 40px;
+  justify-self: unset;
+  justify-content: center;
+  border: 1px solid #850000;
+}
+body .map-container #mapOne {
+  height: 500px;
+}
+body .btn-container {
+  margin-top: 10px;
+  text-align: center;
+}
+body .btn-custom {
+  border-radius: 0%;
+  border: 1px solid #850000;
+  font-family: Perpetua;
+}/*# sourceMappingURL=maps.css.map */

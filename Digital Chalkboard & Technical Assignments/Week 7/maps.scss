@@ -1,0 +1,43 @@
+@mixin btn-cust {
+    border-radius: 0%;
+    border: 1px solid #850000;
+    font-family: Perpetua;
+}
+
+body {
+    background-color: #D5D5D5;
+    
+    .h-two {
+        color: #000000;
+        text-decoration: underline;
+        font-style: unset;
+        font-family: Perpetua;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .map-container {
+        display:flex;
+        margin-top: 70px;
+        margin-right: 40px;
+        margin-left: 40px;
+        justify-self: unset;
+        justify-content: center;
+        border: 1px solid #850000;
+
+        #mapOne{
+            height: 500px;
+            
+        }
+    }
+
+    .btn-container {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .btn-custom{
+        @include btn-cust();
+    }
+}
+
