@@ -11,6 +11,13 @@
 body {
     background-color: #d5d5d5;
 
+    h1 {
+        font-family: Perpetua;
+        color: #850000;
+        font-weight:550;
+        text-align: center;
+    }
+
     .container-music {
         .row {
             display:flex;

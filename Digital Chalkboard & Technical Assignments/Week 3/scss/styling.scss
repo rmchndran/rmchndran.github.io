@@ -10,6 +10,8 @@ $ucft: Helvetica, sans-serif;
     color:steelblue;
 }
 @mixin boxy {
+    margin-top: 15px;
+    margin-bottom: 15px;
     display:flex;
     align-items: center;
     text-align: center;
@@ -30,14 +32,33 @@ body{
 
 background-color: #D5D5D5;    
 
-// .nav_container {
-//     display:flex;
-//     border: 2px solid $ucma;
-//     background-color: $ucma;
-//     font-family: Perpetua;
-//     color:black;
-    
-//     }
+.technical-link {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-right: 47.5px;
+
+
+        .tech-link {
+        color:#850000;
+        font-weight: bolder;
+        font-family: Perpetua;
+        border: 2.5px dotted #850000;
+        padding: 5px;
+        margin-left: 5px;
+
+        }
+
+        .btnInfo {
+            font-family: Perpetua;
+            color: #850000;
+            text-decoration: underline;
+            padding: 5px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+}
 
     h1 {font-style:unset;
         font-family: Perpetua;
