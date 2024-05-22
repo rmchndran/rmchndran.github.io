@@ -11,6 +11,11 @@
   padding: 4px;
   margin-left: 20px;
 }
+@media (max-width: 992px) {
+  .navbar .container-fluid .navbar-nav {
+    margin-left: 0;
+  }
+}
 .navbar .container-fluid .navbar-brand {
   color: #850000;
   text-decoration: overline;
@@ -51,4 +56,9 @@
   border: 2px dotted #850000;
   padding: 4px;
   font-weight: bolder;
+}
+@media (max-width: 992px) {
+  .navbar .container-fluid .time-container {
+    padding: 2px;
+  }
 }/*# sourceMappingURL=navbar2.css.map */
