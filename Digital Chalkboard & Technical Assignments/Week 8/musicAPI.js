@@ -66,7 +66,13 @@ function doFetching(inputArray,outputArray = []) {
     
 }
     function getWorks(artistId) {
-        var table = document.createElement('table')
+        var table = document.createElement('table');
+        const albumFlag = document.createElement('th');
+        albumFlag.innerHTML = "Artist's Associated Album Releases:"
+        albumFlag.style.color = "#850000";
+        albumFlag.style.fontFamily = 'Perpetua';
+        albumFlag.style.textDecoration = 'Underline';
+        table.appendChild(albumFlag);
         // var display = document.getElementById('displayResponse');
         display.innerHTML = "";
         const baselink = "https://musicbrainz.org/ws/2/";
@@ -75,6 +81,7 @@ function doFetching(inputArray,outputArray = []) {
         .then((data) => {
             const works = data.works;
             works.forEach(release => {
+                const albumFlag = document.createElement('th');
                 const outputRows = document.createElement('tr');
                 const itemTitle = document.createElement('td');
                 itemTitle.innerHTML = release.title;
