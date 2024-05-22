@@ -25,7 +25,10 @@ body .technical-link .btnInfo {
   margin-right: 5px;
 }
 body h1 {
+  margin-top: 10px;
   font-style: unset;
+  font-weight: 550;
+  color: #850000;
   font-family: Perpetua;
   text-decoration: underline;
   text-align: center;
