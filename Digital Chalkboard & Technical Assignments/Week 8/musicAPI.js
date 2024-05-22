@@ -51,8 +51,12 @@ function doFetching(inputArray,outputArray = []) {
                     anchor.style.color = '#850000';
                     anchor.style.fontFamily = 'Perpetua';
                     anchor.style.textDecoration = 'underline';
-                    display.appendChild(anchor);
+                    anchor.addEventListener('click', function(request) {
+                        request.preventDefault();
+                        getWorks(item.id);
 
+                    })
+                    display.appendChild(anchor);
 
                 });
                 
@@ -61,6 +65,26 @@ function doFetching(inputArray,outputArray = []) {
     }));
     
 }
+    function getWorks(artistId) {
+        var table = document.createElement('table')
+        // var display = document.getElementById('displayResponse');
+        display.innerHTML = "";
+        const baselink = "https://musicbrainz.org/ws/2/";
+        fetch(`${baselink}work?artist=${artistId}&fmt=json`)
+        .then((response) => response.json())
+        .then((data) => {
+            const works = data.works;
+            works.forEach(release => {
+                const outputRows = document.createElement('tr');
+                const itemTitle = document.createElement('td');
+                itemTitle.innerHTML = release.title;
+                outputRows.appendChild(itemTitle);
+                table.appendChild(outputRows);
+            })
+        display.appendChild(table);
+
+        })
+    }
 
 
     retrieveUserInput()
@@ -79,33 +103,7 @@ function doFetching(inputArray,outputArray = []) {
 
 
 
-    var works = document.querySelectorAll("linkToDiscog");
-    for(w in works) {
-        w.addEventListener('click', (evClick) => {
-            evClick.preventDefault;
-            if(worksRequested) {
-                const newTable = document.createElement('table');
-                return fetch(`${baseLink}release-group?${queryType.toLowerCase()}=${item.id}&fmt=json`)
-                .then(response => response.json())
-                .then(fetchedAlbums => {
-                    for(const albums in fetchedAlbums.release-groups || []) {
-                        for(const albs in albums.title) {
-                            var row = document.createElement('tr');
-                            var cell = `${albs.textContent()}`;
-                            row.appendChild(cell);
 
-                        }
-                    }
-                })
-            } else {
-                console.log("No Further Requests");
-            }
-        });
-
-        function worksRequested() {
-            return true;
-        }
-    }
 
 
 // function pQuery(responses, queryValue) {
