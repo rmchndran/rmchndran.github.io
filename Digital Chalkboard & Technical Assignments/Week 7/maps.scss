@@ -6,19 +6,21 @@
 
 body {
     background-color: #D5D5D5;
-    
+
     .h-two {
         color: #000000;
         text-decoration: underline;
         font-style: unset;
         font-family: Perpetua;
-        text-align: center;
         padding-top: 16px;
-    }
+        text-align: center;
+        }
+
+    
 
     .map-container {
         display:flex;
-        margin-top: 70px;
+        margin-top: 50px;
         margin-right: 40px;
         margin-left: 40px;
         justify-self: unset;
@@ -39,5 +41,38 @@ body {
     .btn-custom{
         @include btn-cust();
     }
-}
+
+    .technical-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
+        flex-direction: row;
+        margin-right: 47.5px;
+        margin-left: 47.5px;
+        
+            .tech-link {
+            color:#850000;
+            font-weight: bolder;
+            font-family: Perpetua;
+            border: 2.5px dotted #474747;
+            padding: 5px;
+            margin-left: 5px;
+            align-self: flex-end;
+    
+            }
+    
+            .btnInfo {
+                font-family: Perpetua;
+                color: #850000;
+                text-decoration: underline;
+                text-decoration-color: #474747;
+                padding: 5px;
+                font-weight: bold;
+                margin-right: 5px;
+                align-self: flex-end;
+            }
+        }
+    }
+
 

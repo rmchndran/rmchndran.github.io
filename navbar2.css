@@ -1,0 +1,54 @@
+.navbar {
+  border: 1.5px solid #850000;
+  background-color: #D5D5D5;
+}
+.navbar .container-fluid {
+  font-family: Perpetua;
+  color: #850000;
+}
+.navbar .container-fluid .navbar-nav {
+  border: 2px dotted #850000;
+  padding: 4px;
+  margin-left: 20px;
+}
+.navbar .container-fluid .navbar-brand {
+  color: #850000;
+  text-decoration: overline;
+  font-size: larger;
+}
+.navbar .container-fluid .nav-link {
+  color: #850000;
+  text-decoration: underline;
+}
+.navbar .container-fluid .dropdown-menu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+  border: 1px solid #850000;
+  background-color: #D9D9D9;
+  border-radius: 0%;
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+.navbar .container-fluid .dropdown-menu .dropdown-submenu {
+  position: relative;
+}
+.navbar .container-fluid .dropdown-menu .dropdown-item {
+  text-decoration: underline;
+}
+.navbar .container-fluid .dropdown-menu :hover {
+  font-weight: bold;
+  color: #850000;
+  background-color: #D9D9D9;
+}
+.navbar .container-fluid .dropdown-menu .active {
+  background-color: #474747 !important;
+  color: white;
+  text-decoration: line-through;
+  text-decoration-thickness: 2.5px;
+  text-decoration-color: White;
+}
+.navbar .container-fluid .time-container {
+  border: 2px dotted #850000;
+  padding: 4px;
+  font-weight: bolder;
+}/*# sourceMappingURL=navbar2.css.map */

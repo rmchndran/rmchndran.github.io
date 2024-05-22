@@ -1,0 +1,38 @@
+body {
+  background-color: #d5d5d5;
+}
+body .container-music .row {
+  display: flex;
+  justify-content: space-around;
+}
+body .container-music .row .col-forms {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 50px;
+  border: 3px solid #850000;
+}
+body .container-music .row .col-forms .userInfo {
+  margin: 10px;
+}
+body .container-music .row .col-forms .userInfo .input-cust {
+  border-radius: 0%;
+  font-family: Perpetua;
+  color: #850000 !important;
+}
+body .container-music .row .col-forms .btn-cust {
+  border-radius: 0%;
+  font-family: Perpetua;
+  border: 1.5px solid #000011;
+  margin-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+body .container-music .row .col-output {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 50%;
+  border: 3px solid #850000;
+}/*# sourceMappingURL=musicAPI.css.map */

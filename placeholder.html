@@ -1,0 +1,53 @@
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><strong>Data Publication</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Assignments
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 2/html/retro.html">Week 2</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 3/html/DigitalChalkboardWeek3.html">Week 3</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/index.html">Week 4 (Index)</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 5/forms.html">Week 5</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 7/charts.html">Week 6</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 7/maps.html">Week 7</a></li>
+                    <li><hr class="dropdown-divider" style="border-color:#850000"></li>
+                    <li><a class="dropdown-item" href="/Digital Chalkboard & Technical Assignments/Week 8/musicAPI.html">Week 8</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Digital Chalkboard & Technical Assignments/Week 3/html/Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Digital Chalkboard & Technical Assignments/Week 3/html/About.html">About</a>
+            </li>
+        </div>
+        <div id="live-time"class="time-container">
+            <div id="time-output" class="clock-display"></div>
+        </div>
+    </div>
+</nav>
+
+<script src="/Digital Chalkboard & Technical Assignments/Week 2/clock.js"></script>
+<script src="/Digital Chalkboard & Technical Assignments/Week 4/buttons.js"></script>
+<script>
+    
+    var pathname = window.location.pathname;
+    var pathToNav = pathname.substring(pathname.lastIndexOf('/') + 1);
+    $('[href*="' + pathToNav + '"]').addClass('active');
+</script>

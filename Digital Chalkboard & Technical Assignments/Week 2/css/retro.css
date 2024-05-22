@@ -1,5 +1,6 @@
 table {
     border-collapse:collapse;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,9 +11,11 @@ th, tr {
 }
 
 body {
-    background: black;
+    background-color: black;
 }
 
 p, h1 {
+    margin: 20px;
     color:greenyellow
 }
+
